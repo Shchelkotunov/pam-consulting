@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 body {
-  display: flex;
-  justify-content: center;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
 }
 
 .wrapper {
-  width: 1240px;
-  padding: 0 20px 0; 
+  display: flex;
+  justify-content: center;
+  width: 1440px; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-menu {
   display: flex;
+  width: 1230px;
   height: 120px;
+  padding: 0 15px 0;
   background: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
   align-items: center;
   justify-content: space-between;
