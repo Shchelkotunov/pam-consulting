@@ -40,6 +40,11 @@ header {
   margin-right: 28px;
 }
 
+.nav-items a:hover {
+  transition: all .3s;
+  color: var(--grey3);
+}
+
 .nav-item:last-child {
   margin-right: 0;
 }
@@ -54,11 +59,16 @@ header {
   background: #FFDB80;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
 }
 
 #button {
   text-decoration: none;
+}
+
+.button-header:hover {
+  box-shadow: 3px 13px 13px rgba(0, 0, 0, 0.384);
+  transition: all .3s;
+  
 }
 
 main {
