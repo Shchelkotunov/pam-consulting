@@ -1,11 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+
 body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-.wrapper {
+.body__wraper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/**HEADER MOBILE**/
+
+header {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logoheader {
+  width: 100px;
+}
+
+.conteiner {
+  padding: 0 15px 0;
+  width: 345px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  position: absolute;
+  background-color: gray;
+  right: -265px;
+  top: 0;
+  width: 265px;
+  visibility: hidden;
+  padding-top: 75px;
+  transition: transform .5s, visibility .5s;
+}
+
+.menu__list {
+  list-style-type: none; 
+}
+
+.menu__link {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px;
+}
+
+.button__header {
+  display: none;
+}
+
+.header__burger-btn {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background-color: #6D31D0;
+  border: none;
+  outline: none;
+}
+
+.header__burger-btn span {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  left: 0;
+  transition: transform .5s;
+  will-change: transform;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.header__burger-btn:hover span {
+  background-color: rgb(0, 0, 0);
+}
+
+.header__burger-btn span:nth-child(1) {
+  transform: translateY(-12px);
+}
+
+.header__burger-btn span:nth-child(3) {
+  transform: translateY(12px);
+}
+
+/*Крестик*/
+
+.header.open .header__burger-btn span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.header.open .menu {
+  transform: translateX(-100%);
+  visibility: visible;
+}
+
+/*DESKTOP*/
+/**.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,4 +202,4 @@ main {
   color: #434364;
   margin-top: 250px;
   margin-left: 230px;
-}
+}**/
