@@ -39,6 +39,7 @@ header {
 
 .menu {
   position: absolute;
+
   background-color: gray;
   right: -265px;
   top: 0;
@@ -46,6 +47,7 @@ header {
   visibility: hidden;
   padding-top: 75px;
   transition: transform .5s, visibility .5s;
+  will-change: transform;
 }
 
 .menu__list {
